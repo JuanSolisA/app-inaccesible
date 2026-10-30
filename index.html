@@ -243,17 +243,17 @@
 
   <!-- REVELACIÓN -->
   <section class="screen" id="s-reveal">
-    <div style="font-size:48px">👵📱</div>
-    <h1>Era un experimento. Así se siente usar el celular para muchos adultos mayores.</h1>
+    <div style="font-size:48px">😩📱</div>
+    <h1>Era un experimento. Así se sienten muchas apps y trámites online para cualquier persona.</h1>
     <p id="revealIntro"></p>
     <div class="stats" id="stats"></div>
 
     <h2>Lo que viviste y lo que representa</h2>
     <ul class="map">
-      <li><b>🔢 El código que desapareció</b>Los códigos por SMS o mail que vencen en minutos. Recordarlos es difícil cuando la memoria de corto plazo falla.</li>
-      <li><b>🏃 El botón que se escapaba</b>El temblor en las manos y la poca precisión hacen que los botones chicos se sientan exactamente así.</li>
-      <li><b>🔍 Letra chica y gris clarito</b>Con la edad se pierde agudeza visual y sensibilidad al contraste. Muchas apps se leen así.</li>
-      <li><b>🧹 El formulario que se borró</b>El miedo a “romper algo” y tener que empezar de cero hace que muchos abandonen o pidan ayuda.</li>
+      <li><b>🔢 El código que desapareció</b>Los códigos por SMS o mail que vencen en minutos y te hacen saltar de una app a otra. Nadie debería tener que memorizar un número para hacer un trámite.</li>
+      <li><b>🏃 El botón que se escapaba</b>Botones chicos, pegados a otros o que se mueven mientras carga la página: vas a tocar uno y pasa otra cosa.</li>
+      <li><b>🔍 Letra chica y gris clarito</b>La letra diminuta y con poco contraste le cuesta a cualquiera, sobre todo en el celular, en la calle o con el sol de frente.</li>
+      <li><b>🧹 El formulario que se borró</b>Un error sin explicación y a empezar de cero. Después de perder lo que ya cargaste, dan ganas de dejar el trámite para otro día.</li>
       <li><b>🤯 Doble negación y letra chica legal</b>Lenguaje confuso que lleva a aceptar cosas sin querer, y es una puerta a estafas.</li>
       <li><b>🚦 Captchas, ventanas y chatbots</b>Pasos extra que no se explican, y “ayuda” que no ayuda ni tiene una persona detrás.</li>
       <li><b>🔠 Los botones A+ / A− al revés</b>Configuraciones poco intuitivas: cuando algo no hace lo que se espera, se deja de intentar.</li>
@@ -270,7 +270,7 @@
     </ul>
 
     <div class="note">🔒 <b>No se guardó ni se envió ningún dato.</b> Todo lo que escribiste se quedó en tu celular y se borra al cerrar la página.</div>
-    <p style="margin-top:20px">La próxima vez que tu abuela, tu abuelo o tus papás te pidan ayuda con el celular, acordate de este minuto. 💛</p>
+    <p style="margin-top:20px">La próxima vez que una app o un trámite online te haga sentir torpe, acordate de este minuto: el problema no sos vos, es el diseño. 💛</p>
     <button class="bigbtn" onclick="location.reload()">Volver a intentarlo</button>
   </section>
 </main>
@@ -566,7 +566,7 @@
     const t = secs >= 60 ? `${Math.floor(secs / 60)} min ${secs % 60} s` : `${secs} s`;
     const codeTxt = S.codeOk ? (S.codeRecovered ? 'Con ayuda' : '¡Sí! 🎉') : 'No';
     $('revealIntro').textContent = S.gaveUp
-      ? `Te rendiste${S.name ? ', ' + S.name : ''}. Está bien: muchas personas mayores también lo hacen… y dejan de usar el trámite digital para siempre.`
+      ? `Te rendiste${S.name ? ', ' + S.name : ''}. Está bien: a cualquiera le pasa. Muchos trámites online quedan así, abandonados a mitad de camino.`
       : `Lo lograste${S.name ? ', ' + S.name : ''}. Pero la “encuesta de 1 minuto” te llevó ${t}.`;
     $('stats').innerHTML = [
       [t, 'de tu tiempo'],
